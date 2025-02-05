@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Third {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Enter the user name:");
+        String str1 = in.nextLine();
+        
+        System.out.println("Re-enter the user name:");
+        String str2 = in.nextLine();
+        
+        in.close();
+        
+        if (str1.equals(str2)) {
+            System.out.println("Usernames match!");
+        } else {
+            System.out.println("Usernames do not match!");
+        }
+    }
+}
