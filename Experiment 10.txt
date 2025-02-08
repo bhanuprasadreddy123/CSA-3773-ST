@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CubeSquare {
+    public static double getSquare(double n) {
+        return n * n;
+    }
+
+    public static double getCube(double n) {
+        return n * n * n;
+    }
+
+    public static void main(String[] args) {
+        try {
+            Scanner s = new Scanner(System.in);
+            System.out.println("Enter a number:");
+            double n = s.nextDouble();
+            
+            double square = getSquare(n);
+            double cube = getCube(n);
+            
+            System.out.println("The square of the number = " + square);
+            System.out.println("The cube of the number = " + cube);
+        } catch (Exception e) {
+            System.out.println("Invalid input.");
+        }
+    }
+}
